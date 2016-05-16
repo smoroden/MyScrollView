@@ -37,14 +37,14 @@
     [self.myScrollView addSubview:yellowView];
     
     
-    
-    
+    self.myScrollView.contentSize = (CGSize){500,1000};
 }
+
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.view.bounds = (CGRect){self.view.frame.origin.x, self.view.frame.origin.y + 100, self.view.frame.size.width, self.view.frame.size.height};
+    //self.view.bounds = (CGRect){self.view.frame.origin.x, self.view.frame.origin.y + 100, self.view.frame.size.width, self.view.frame.size.height};
 }
 
 - (void)didReceiveMemoryWarning {
